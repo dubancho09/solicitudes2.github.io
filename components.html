@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/dist/style.min.css">
+</head>
+<body>
+  <!-- Inicio navbar desktop -->
+  <div class="container-fluit">
+    <nav class="navbar navbar-light colorhead navbar-desktop">
+      <div class="container">
+        <a href="#" class="navbar__logo">
+          <img src="./assets/img/Mapfre-icon.svg" alt="logo-mapfre" />
+        </a>
+      </div>
+    </nav>
+  </div>
+  <!-- Fin Navbar -->
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- formularios -->
+            <div class="form" autocomplete="false">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="text-danger">Inputs</h4>
+                        <div class="form-group mt-3">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" placeholder="Por defecto">
+                              <label class="form-label" for="floatingInput">Por defecto</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control is-valid" placeholder="Activo">
+                              <label class="form-label" for="floatingInput">Activo</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control is-invalid" placeholder="Error">
+                              <label class="form-label" for="floatingInput">Error</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-floating">
+                              <select id="type_document" class="form-select">
+                                <option value="1">--SELECCIONA--</option>
+                                <option value="2">Lorem</option>
+                              </select>
+                              <label class="pt-2">Selección</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="text-danger">Modals</h4>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">
+            Modal warning
+          </button>
+        
+            <!-- modal warning -->
+            <div class="modal fade" id="modal-warning" tabindex="-1" role="dialog" aria-labelledby="modal-arma-fuego"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <img class="icon-alert" src="./assets/img/modal-icon-warning.svg" />
+                        <div class="d-flex justify-content-end mt-2 me-2">
+                            <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                        </div>
+                        <div class="modal-body mt-2">
+                            <div class="container text-center mt-4 mb-4">
+                                <h4><strong class="text-title">Alerta (Nombre largo)</strong></h4>
+                                <span>Esta es la información con la que generaremos tu póliza, debes revisarla muy bien</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+              Modal success
+            </button>
+          
+              <!-- modal warning -->
+              <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <img class="icon-alert" src="./assets/img/icon_alert_success.svg" />
+                          <div class="d-flex justify-content-end mt-2 me-2">
+                              <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                          </div>
+                          <div class="modal-body mt-2">
+                              <div class="container text-center mt-4 mb-4">
+                                  <h4><strong class="text-title">Alerta (Nombre largo)</strong></h4>
+                                  <span>Esta es la información con la que generaremos tu póliza, debes revisarla muy bien</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <button type="button" class="btn btn-danger mt-3" data-toggle="modal" data-target="#modal-error">
+                Modal error
+              </button>
+            
+                <!-- modal error -->
+                <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <img class="icon-alert-error" src="./assets/img/alert-error-danger.svg" />
+                            <div class="d-flex justify-content-end mt-2 me-2">
+                                <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                            </div>
+                            <div class="modal-body mt-2">
+                                <div class="container text-center mt-4 mb-4">
+                                    <h4><strong class="text-title">Alerta (Nombre largo)</strong></h4>
+                                    <span>Esta es la información con la que generaremos tu póliza, debes revisarla muy bien</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#drag_and_drop">
+                  Drag and drop
+                </button>
+              
+                  <!-- Drag and drop -->
+                  <div class="modal fade drag_and_drop" id="drag_and_drop" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered " role="document">
+                          <div class="modal-content">
+                              <img class="icon-alert" src="./assets/img/modal-icon-warning.svg" />
+                              <div class="d-flex justify-content-end mt-2 me-2">
+                                  <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                              </div>
+                              <div class="modal-body mt-2 px-4">
+                                  <div class="container mt-4 mb-4">
+                                      <div class="text-center">
+                                        <h5><strong class="text-title">Carga el documento “Cédula de ciudadanía”</strong></h5>
+                                        <span>Recuerda que los nombres deben cumplir con las siguientes características:</span>
+                                      </div>
+                                      <div class="document-requirements mt-3 p-3">
+                                        <ul>
+                                          <li>Todas las letras en minúscula</li>
+                                          <li>Separa cada palabra con un guion bajo</li>
+                                          <li>Debe tener máximo 20 caracteres.</li>
+                                        </ul>
+                                      </div>
+                                      <div class="drop-area mt-4">
+                                        <img src="./assets/img/drop-icon.svg" alt="drop-icon">
+                                        <input type="file" id="load-file" hidden>
+                                        <label class="btn-file">Subir documentos desde mi equipo</label>
+                                        <span>O arrastra los archivos aquí</span>
+                                      </div>
+                                      <div class="preview"></div>
+                                      <div class="d-flex justify-content-center">
+                                        <button class="btn medium-button button button-success mt-4" disabled>Subir</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            
+        </div>
+
+        <div class="col-md-4">
+          <!-- buttons -->
+          <h4 class="text-danger">Buttons</h4>
+          <button class="btn medium-button button button-success mb-3">Active</button>
+          <button class="btn medium-button button button-success mb-3" disabled>Disabled</button>
+          <button class="btn medium-button button button-success-outline mb-3">Outline</button>
+          <button class="btn medium-button button button-danger mb-3">Danger</button>
+          <button class="btn medium-button button button-secondary mb-3">Secondary</button>
+          <button class="btn medium-button button button-icon mb-3">
+            <span>+</span>
+            <span>Icon Button</span>
+          </button>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="text-danger">Table</h4>
+        <div class="scroll-table">
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Usuario 1</td>
+                <td>25</td>
+                <td>usuario1@example.com</td>
+              </tr>
+              <tr>
+                <td>Usuario 2</td>
+                <td>30</td>
+                <td>usuario2@example.com</td>
+              </tr>
+              <tr>
+                <td>Usuario 3</td>
+                <td>30</td>
+                <td>usuario2@example.com</td>
+              </tr>
+              <tr>
+                <td>Usuario 4</td>
+                <td>30</td>
+                <td>usuario2@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Inicio Footer -->
+  <footer class="container-fluit px-2">
+    <div class="row align-items-center p-4">
+      <div class="col-md-4 col-sm-12 col-12 mt-1 d-flex center">
+        <img class="footer__item--img" src="./assets/img/footer-icon.svg" alt="icon mapfre" />
+        <h6 class="mt-1 mx-2">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Todos los derechos reservados
+        </h6>
+      </div>
+      <div class="col-md-4 col-sm-12 col-12 text-center">
+        <img src="./assets/img/icon-vigilado.svg" alt="vigilado" />
+      </div>
+      <div class="col-md-4 col-sm-12 col-12 text-center">
+        <h6 class="mt-2 mx-2">Nacional 018000 973 031/ Bogotá 307 80 32</h6>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin Footer -->
+
+  <script src="./assets/js/components/drag_and_drop.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

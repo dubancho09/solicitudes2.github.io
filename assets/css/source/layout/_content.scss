@@ -1,0 +1,16 @@
+.content{
+    background-color: $background-content;
+    background-image: url("../../../../assets/img/Ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.title-page{
+    &__text{
+        font-size: 2.813rem;
+        font-weight: 900;
+        color: #A8A8A8;
+        font-style: normal;
+        opacity: 0.40;
+    }
+}

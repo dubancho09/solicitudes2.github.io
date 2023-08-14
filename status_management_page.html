@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes</title>
+    <link rel="shortcut icon" href="http://mapfre.aseguratuauto.com.mx/themes/mapfredina/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/dist/style.min.css">
+</head>
+
+<body class="content">
+    <div class="container-fluit">
+        <!-- Inicio navbar desktop -->
+        <div class="container-fluit">
+            <nav class="navbar navbar-light colorhead navbar-desktop">
+                <div class="container">
+                    <a href="#" class="navbar__logo">
+                        <img src="./assets/img/Mapfre-icon.svg" alt="logo-mapfre" />
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- Fin Navbar -->
+        <!-- Inicio contenido principal -->
+        <div style="min-height: 100vh;" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex title-page align-items-center justify-content-between mt-5">
+                        <a href="#" onclick="window.history.back();">
+                          <img src="./assets/img/btn-back.svg" />
+                        </a>
+                        <span class="title-page__text">Solicitudes</span>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col-md-12 inf-mobile">
+                    <div class="alert mt-3">
+                      <span class="letter-subtitle-var">ANULACIÓN AUTOS INDIVIDUAL - <span class="text-title">Solicitud No. 00001</span></span>
+                    </div>
+          
+                    <div class="d-flex">
+                      <button class="btn w-50 button button-icon-error me-1" data-toggle="modal" data-target="#modal-comments">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="icon-button" d="M13.583 14.1377L14.1423 13.577L12.6442 12.0751V9.83229H11.8452V12.3955L13.583 14.1377ZM1.1985 14.418C0.868914 14.418 0.586767 14.3004 0.35206 14.0651C0.117353 13.8298 0 13.5469 0 13.2165V1.2015C0 0.871089 0.117353 0.588235 0.35206 0.352941C0.586767 0.117647 0.868914 0 1.1985 0H13.1835C13.5131 0 13.7953 0.117647 14.03 0.352941C14.2647 0.588235 14.382 0.871089 14.382 1.2015V7.78974C14.1956 7.68294 13.9992 7.59616 13.7928 7.52941C13.5864 7.46266 13.3833 7.40926 13.1835 7.36921V1.2015H1.1985V13.2165H7.37079C7.42405 13.4301 7.48413 13.6382 7.55102 13.8407C7.6179 14.0433 7.69764 14.2357 7.79026 14.418H1.1985ZM1.1985 12.2753V13.2165V1.2015V7.36921V7.28911V12.2753ZM3.196 11.214H7.41074C7.464 11.0004 7.52393 10.7935 7.59051 10.5932C7.65709 10.393 7.74365 10.1994 7.85019 10.0125H3.196V11.214ZM3.196 7.80976H10.0674C10.2538 7.71631 10.4336 7.63955 10.6067 7.57947C10.7799 7.5194 10.9729 7.46266 11.186 7.40926V6.60826H3.196V7.80976ZM3.196 4.40551H11.186V3.20401H3.196V4.40551ZM12.2347 16C11.2027 16 10.3204 15.6295 9.58801 14.8886C8.8556 14.1477 8.48939 13.2699 8.48939 12.2553C8.48939 11.2082 8.85553 10.3156 9.58782 9.57763C10.3201 8.8396 11.2057 8.47059 12.2447 8.47059C13.2701 8.47059 14.1523 8.8396 14.8914 9.57763C15.6305 10.3156 16 11.2082 16 12.2553C16 13.2699 15.6305 14.1477 14.8914 14.8886C14.1523 15.6295 13.2667 16 12.2347 16Z" fill="#D81E05"></path>
+                            </svg>
+                          <span class="ms-2">Bitacora</span>
+                        </div>
+                      </button>
+                      <button data-toggle="modal" data-target="#modal-documents" class="btn w-50 button button-icon-error">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="icon-button" d="M3.48889 12.4667H9.6V11.1333H3.48889V12.4667ZM3.48889 8.66667H12.5111V7.33333H3.48889V8.66667ZM3.48889 4.86667H12.5111V3.53333H3.48889V4.86667ZM1.33333 16C0.977778 16 0.666667 15.8667 0.4 15.6C0.133333 15.3333 0 15.0222 0 14.6667V1.33333C0 0.977778 0.133333 0.666667 0.4 0.4C0.666667 0.133333 0.977778 0 1.33333 0H14.6667C15.0222 0 15.3333 0.133333 15.6 0.4C15.8667 0.666667 16 0.977778 16 1.33333V14.6667C16 15.0222 15.8667 15.3333 15.6 15.6C15.3333 15.8667 15.0222 16 14.6667 16H1.33333ZM1.33333 14.6667H14.6667V1.33333H1.33333V14.6667Z" fill="#D81E05"></path>
+                          </svg>
+                          <span class="ms-2">Documentos</span>
+                        </div>
+                      </button>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-3 info-desktop">
+                    <div class="card card-shadow p-5">
+                      <span class="letter-subtitle text-title">Resumen de la solicitud</span>
+                      <div class="divider my-3"></div>
+          
+                      <div class="alert p-2 text-center">
+                        <span class="letter-subtitle">ANULACIÓN AUTOS INDIVIDUAL - <span class="text-title">Solicitud No.
+                            00001</span> </span>
+                      </div>
+          
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="description-request">
+                            <span class="description-request__item">Paso actual: <b class="text-title">PASO INICIAL - 1</b></span>
+                            <span class="description-request__item">Radicador: <span class="text-title">Nombre Ejemplo Largo
+                                Apellido</span> </span>
+                            <span class="description-request__item">Responsable: <span class="text-title">Nombre Ejemplo Largo
+                                Apellido</span> </span>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="description-request">
+                            <span class="description-request__item">Fecha radicación: <span class="text-title">30/06/2023
+                                2:00p.m</span></span>
+                            <span class="description-request__item">Correo radicador: <span class="text-title">Nombrapellido@gmail.com</span> </span>
+                            <span class="description-request__item">ANS Solicitud: <span class="text-title">16
+                                (Horas/Hábiles)</span> </span>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="description-request">
+                            <span class="description-request__item">Fecha vencimiento: <span class="text-title">30/06/2023
+                                2:00p.m</span></span>
+                            <span class="description-request__item">Teléfono Radicador: <span class="text-title">1234567890</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card card-shadow accordion-type-1 px-5 py-4">
+                        <div role="button" class="d-flex justify-content-between button-drop accordion-type-1__button">
+                            <span class="letter-subtitle text-title">Información General</span>
+                            <img class="angle-img" src="./assets/img/angle_down_accordion.svg" alt="angle">
+                        </div>
+                        <div class="accordion-type-1__body">
+                            <div class="divider my-3"></div>
+
+                            <div class="form row mt-4">
+                                <div class="col-md-6">
+                                    <div class="form-group form-disabled">
+                                        <label>Clave Agente</label>
+                                        <input type="text" placeholder="Automoviles" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-disabled">
+                                        <label>Oficina*</label>
+                                        <input type="text" placeholder="Automoviles" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="form-group form-disabled">
+                                        <label>Nombre completo</label>
+                                        <input type="text" placeholder="Ejemplo nombre largo apellido largo" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="form-group form-disabled">
+                                        <label>No. Póliza/No. Cotización</label>
+                                        <input type="text" placeholder="Ejemplo nombre largo apellido largo" class="form-control" disabled="">
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-12">
+                                    <div class="divider my-4"></div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <div class="form-group form-disabled">
+                                        <label>Tomador</label>
+                                        <input type="text" placeholder="Nombre Largo Ejemplo" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group form-disabled">
+                                        <label>Tipo Documento Tomador</label>
+                                        <input type="text" placeholder="Cédula Ciudadanía" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group form-disabled">
+                                        <label>Número documento</label>
+                                        <input type="text" placeholder="123456789" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="form-group form-disabled">
+                                        <label>Placa</label>
+                                        <input type="text" placeholder="BKC51P" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="form-group form-disabled">
+                                        <label>Email Radicador</label>
+                                        <input type="text" placeholder="nombrelargoejemplo@gmail.com" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="form-group form-disabled">
+                                        <label>Celular Radicador</label>
+                                        <input type="text" placeholder="300600300" class="form-control" disabled="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="form-group">
+                                        <label>Descripción de la radicación:</label>
+                                        <textarea class="form-control mt-2" rows="2" disabled="">Lorem ipsum dolor sit amet consectetur. Pellentesque eget sit lorem pharetra viverra in.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card card-shadow p-5">
+                        <div class="text-center mt-2">
+                            <span class="subtitle-page">Gestiona la solicitud</span>
+                            <span class="d-block">Por favor llena los campos para continuar con el radicado</span>
+                        </div>
+
+                        <div class="divider my-3"></div>
+
+                        <form class="row">
+                            <div class="col-md-4">
+                                <div class="form-group mt-3">
+                                    <div class="form-floating mb-3">
+                                      <input type="text" value="RE - PROCESAR - 002" class="form-control is-valid" placeholder="Estado de solicitud">
+                                      <label class="form-label" for="floatingInput">Estado de solicitud</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group mt-3">
+                                    <div class="form-floating mb-3">
+                                      <input type="text" value="RE - PROCESAR - 002" class="form-control is-valid" placeholder="Estado de solicitud">
+                                      <label class="form-label" for="floatingInput">Estado de solicitud</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn medium-button button button-success mb-3">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin contenido principal -->
+        <!-- Inicio Footer -->
+        <footer class="container-fluit px-2 mt-5">
+            <div class="row align-items-center p-4">
+                <div class="col-md-4 col-sm-12 col-12 mt-1 d-flex center">
+                    <img class="footer__item--img" src="./assets/img/footer-icon.svg" alt="icon mapfre" />
+                    <h6 class="mt-1 mx-2">
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Todos los derechos reservados
+                    </h6>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <img src="./assets/img/icon-vigilado.svg" alt="vigilado" />
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h6 class="mt-2 mx-2">Nacional 018000 973 031/ Bogotá 307 80 32</h6>
+                </div>
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+    </div>
+
+    <script src="./assets/js/components/accordion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>
